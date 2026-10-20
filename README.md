@@ -1,3 +1,7 @@
+<!-- SVENKUNKKA-README-NAV:BEGIN -->
+[中文项目说明](#project-overview-zh) · [English overview](#project-overview-en) · [维护者 X / Maintainer on X](https://x.com/Svenu1s5)
+<!-- SVENKUNKKA-README-NAV:END -->
+
 <p align="center">
   <img src="https://img.shields.io/badge/dsh-plugin-blue?style=for-the-badge" alt="DSH Plugin">
 </p>
@@ -216,3 +220,32 @@ If this project helps you, please give it a ⭐ — it motivates us to keep impr
     </picture>
   </a>
 </div>
+
+
+---
+
+<!-- SVENKUNKKA-PROJECT-INFO:BEGIN -->
+
+<a id="project-overview-zh"></a>
+## 中文项目说明
+
+[biedongbin/dsh-claude-compat](https://github.com/biedongbin/dsh-claude-compat) 的分支，将 Claude Code 的技能、命令、规则、代理、部分 hooks 与 MCP 配置接入 DSH，减少重复维护；原工作归上游及贡献者。
+
+**使用入口：** 准备 DSH profile 和 pnpm，按 README 运行 `dsh plugin --profile web add dsh-claude-compat@latest`，再以 `dsh web` 重启。
+
+**范围说明：** 安装命令使用发布包；hooks 仅桥接文档列出的子集，MCP 配置在启动时读取，修改后需要重启。需确认本地 DSH 与插件版本兼容。
+
+<a id="project-overview-en"></a>
+## English project overview
+
+A fork of [biedongbin/dsh-claude-compat](https://github.com/biedongbin/dsh-claude-compat), bringing Claude Code skills, commands, rules, agents, selected hooks and MCP configuration into DSH to reduce duplicate maintenance. Original work belongs to upstream and contributors.
+
+**Getting started:** With a DSH profile and pnpm available, follow the README command `dsh plugin --profile web add dsh-claude-compat@latest`, then restart with `dsh web`.
+
+**Scope:** The installation command uses the published package. Only the documented hook subset is bridged; MCP configuration is read at startup and requires a restart after changes. Check compatibility with your local DSH version.
+
+**本 Fork 的维护者 / Maintainer of this fork:** [SvenKunkka](https://github.com/SvenKunkka) · [X / Twitter](https://x.com/Svenu1s5)
+
+**上游项目 / Upstream:** [biedongbin/dsh-claude-compat](https://github.com/biedongbin/dsh-claude-compat)。保留原作者署名与原许可证 / Original authorship and license notices are retained.
+
+<!-- SVENKUNKKA-PROJECT-INFO:END -->
